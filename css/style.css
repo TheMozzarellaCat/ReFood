@@ -1,0 +1,265 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  position: fixed;
+  z-index: 200;
+  width: 100%;
+  background-color: #171E18;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20%;
+  box-sizing: border-box;
+}
+header .site-info {
+  height: 9vh;
+  display: flex;
+  align-items: center;
+}
+header .site-info .site-logo {
+  height: 4vh;
+  width: 4vh;
+  background-repeat: no-repeat;
+  background: url(/assets/site-logo.svg);
+  background-size: 4vh 4vh;
+}
+header .site-info .site-name {
+  font-size: 3vh;
+  font-weight: 600;
+  color: #00913b;
+}
+header .auth-btn {
+  height: 4.2vh;
+  width: 12vh;
+  border-radius: 200px;
+  background-color: #00913b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-family: inherit;
+}
+header .auth-btn img {
+  height: 3em;
+}
+header .auth-btn p {
+  color: #171E18;
+  font-size: 2em;
+  font-weight: 700;
+  margin-left: 5px;
+  letter-spacing: -1px;
+}
+
+.search-bar-container {
+  height: 60vh;
+  width: 100%;
+  background-color: #171E18;
+  padding: 10% 0%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.search-bar-container::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  background: url(/assets//wave-haikei.svg) no-repeat;
+  object-fit: contain;
+}
+.search-bar-container h1 {
+  color: white;
+  font-size: 3em;
+  font-weight: 700;
+}
+.search-bar-container .search-bar {
+  width: 40%;
+  height: 6.1vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0% 2%;
+  box-sizing: border-box;
+}
+.search-bar-container .search-bar .adress-img {
+  height: 3vh;
+  width: 6%;
+  background: url(/assets/location-icon.svg);
+  background-size: 100% 3vh;
+}
+.search-bar-container .search-bar .search-input {
+  height: 5.9vh;
+  width: 64%;
+  font-size: 1.2em;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+.search-bar-container .search-bar .search-button {
+  width: 30%;
+  height: 4vh;
+  border-radius: 100px;
+  border: none;
+  background-color: #171E18;
+  color: #f8f7f7;
+  font-size: 1.1em;
+  font-family: inherit;
+}
+.search-bar-container .categories-container {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.search-bar-container .categories-container .category {
+  height: 15vh;
+  width: 15%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.search-bar-container .categories-container .category .category-name {
+  color: white;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.search-bar-container .categories-container .category .image-background {
+  height: 15vh;
+  width: 100%;
+  background-size: 100% 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+  box-sizing: border-box;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M821.5 703Q734 906 517 876.5t-326-203q-109-173.5-7-359T507.5 116Q729 103 819 301.5t2.5 401.5Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22%23fff%22 d=%22M821.5 703Q734 906 517 876.5t-326-203q-109-173.5-7-359T507.5 116Q729 103 819 301.5t2.5 401.5Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+.search-bar-container .categories-container .category .image-background .category-icon {
+  height: 5vh;
+  width: 5vh;
+}
+
+.flexible-search-bar-container {
+  height: 15vh;
+  width: 100%;
+  background-color: #171E18;
+  position: fixed;
+  top: -20vh;
+  transition: top 0.3s ease, opacity 0.25s ease;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+}
+.flexible-search-bar-container h1 {
+  color: white;
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 2vh;
+  margin-top: -4vh;
+}
+.flexible-search-bar-container .search-bar {
+  width: 40%;
+  height: 6.1vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0% 2%;
+  box-sizing: border-box;
+}
+.flexible-search-bar-container .search-bar .adress-img {
+  height: 3vh;
+  width: 6%;
+  background: url(/assets/location-icon.svg);
+  background-size: 100% 3vh;
+}
+.flexible-search-bar-container .search-bar .search-input {
+  height: 5.9vh;
+  width: 64%;
+  font-size: 1.2em;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+.flexible-search-bar-container .search-bar .search-button {
+  width: 30%;
+  height: 4vh;
+  border-radius: 100px;
+  border: none;
+  background-color: #171E18;
+  color: #f8f7f7;
+  font-size: 1.1em;
+  font-family: inherit;
+}
+
+.visible {
+  opacity: 1;
+  pointer-events: auto;
+  top: 9vh;
+}
+
+/*# sourceMappingURL=style.css.map */
