@@ -1,0 +1,273 @@
+/* Footer Styles */
+.app-footer {
+  background-color: white;
+  color: #333;
+  padding: 40px 0 0;
+  font-family: 'Montserrat', sans-serif;
+  border-top: 1px solid #e0e0e0;
+
+  .footer-main-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 30px;
+
+    .footer-left {
+      flex: 1;
+      max-width: 350px;
+
+      .contact-section {
+        background-color: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        border: 1px solid #e0e0e0;
+
+        h3 {
+          color: #00913B;
+          margin-bottom: 20px;
+          font-size: 1.3rem;
+          font-weight: 600;
+        }
+
+        .contact-info {
+          list-style: none;
+          padding: 0;
+          margin-bottom: 25px;
+
+          li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+
+            i {
+              margin-right: 12px;
+              color: #00913B;
+              width: 20px;
+              text-align: center;
+              font-size: 1.1rem;
+            }
+          }
+        }
+
+        .help-buttons {
+          display: flex;
+          gap: 12px;
+          margin-bottom: 30px;
+
+          .help-button {
+            background-color: #00913B;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+            font-size: 0.9rem;
+
+            &:hover {
+              background-color: darken(#00913B, 10%);
+              transform: translateY(-2px);
+            }
+          }
+        }
+
+        .social-section {
+          h3 {
+            margin-bottom: 15px;
+            color: #00913B;
+          }
+
+          .social-icons {
+            display: flex;
+            gap: 15px;
+
+            a {
+              color: #00913B;
+              font-size: 1.4rem;
+              transition: all 0.3s;
+
+              &:hover {
+                color: darken(#00913B, 10%);
+                transform: translateY(-3px);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footer-right {
+      flex: 2.5;
+      
+      .faq-section {
+        background-color: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        border: 1px solid #e0e0e0;
+
+        h2 {
+          color: #00913B;
+          text-align: left;
+          margin-bottom: 25px;
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+
+        .accordion {
+          .accordion-item {
+            margin-bottom: 12px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #e0e0e0;
+
+            .accordion-header {
+              width: 100%;
+              padding: 16px 20px;
+              background-color: #f8f8f8;
+              color: #333;
+              border: none;
+              text-align: left;
+              cursor: pointer;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              font-size: 1rem;
+              font-weight: 500;
+              transition: all 0.3s;
+
+              &:hover {
+                background-color: #f0f0f0;
+              }
+
+              i {
+                transition: transform 0.3s;
+                color: #00913B;
+              }
+
+              &.active {
+                background-color: #f0f0f0;
+              }
+            }
+
+            .accordion-content {
+              padding: 0 20px;
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.3s ease-out, padding 0.3s ease;
+              background-color: white;
+
+              &.active {
+                padding: 20px;
+                max-height: 500px;
+              }
+
+              p {
+                margin: 0;
+                line-height: 1.6;
+                color: #555;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    margin-top: 40px;
+    background-color: #171E18;
+    padding: 40px 0;
+
+    .newsletter-section {
+      max-width: 800px;
+      margin: 0 auto 30px;
+      padding: 0 20px;
+      text-align: center;
+      
+      h3 {
+        color: white;
+        margin-bottom: 15px;
+        font-size: 1.4rem;
+      }
+      
+      p {
+        margin-bottom: 20px;
+        color: #ccc;
+        font-size: 1rem;
+      }
+      
+      .newsletter-form {
+        display: flex;
+        max-width: 600px;
+        margin: 0 auto;
+        gap: 15px;
+        
+        input {
+          flex: 2;
+          padding: 14px 20px;
+          border: 1px solid #555;
+          border-radius: 6px;
+          font-size: 1rem;
+          background-color: #2a332b;
+          color: white;
+          
+          &:focus {
+            outline: none;
+            border-color: #00913B;
+          }
+        }
+        
+        button {
+          flex: 1;
+          background-color: #00913B;
+          color: white;
+          border: none;
+          padding: 14px 25px;
+          border-radius: 6px;
+          cursor: pointer;
+          transition: all 0.3s;
+          font-weight: 500;
+          font-size: 1rem;
+          
+          &:hover {
+            background-color: darken(#00913B, 10%);
+          }
+        }
+      }
+    }
+
+    .copyright-section {
+      text-align: center;
+      padding-top: 20px;
+      border-top: 1px solid #2a332b;
+      
+      p {
+        margin-bottom: 10px;
+        color: #ccc;
+      }
+      
+      .legal-links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        
+        a {
+          color: #00913B;
+          text-decoration: none;
+          transition: color 0.3s;
+          font-size: 0.9rem;
+          
+          &:hover {
+            color: lighten(#00913B, 15%);
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

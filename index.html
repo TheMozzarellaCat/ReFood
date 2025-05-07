@@ -8,15 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="frontend/script.js" defer></script>
 </head>
 <body>
-
     <header>
-
         <section class="site-info">
             <div class="site-logo"></div>
             <div class="site-name">ReFood</div>
@@ -28,8 +25,430 @@
                 <p>Login</p>
             </button>
         </nav>
-
     </header>    
+
+    <section class="search-bar-container">
+        <h1>Poznaj swoje miasto</h1>
+        <section class="search-bar">
+            <div class="adress-img"></div>
+            <input type="text" class="search-input" placeholder="Wpisz Adres" />
+            <button class="search-button">Użyj obecnej lokalizacji</button>
+        </section>
+        <section class="categories-container">
+            <div class="category">
+                <div class="image-background">
+                    <img src="/assets/category-icons/wheat-icon.svg" alt="category-icon" class="category-icon">
+                </div>
+                <div class="category-name">Pszenne</div>
+            </div>
+
+            <div class="category">
+                <div class="image-background">
+                    <img src="/assets/category-icons/vegetable-icon.svg" alt="category-icon" class="category-icon">
+                </div>
+                <div class="category-name">Warzywa</div>
+            </div>
+
+            <div class="category">
+                <div class="image-background">
+                    <img src="/assets/category-icons/fruit-icon.svg" alt="category-icon" class="category-icon">
+                </div>
+                <div class="category-name">Owoce</div>
+            </div>
+
+            <div class="category">
+                <div class="image-background">
+                    <img src="/assets/category-icons/meat-icon.svg" alt="category-icon" class="category-icon">
+                </div>
+                <div class="category-name">Mięsa</div>
+            </div>
+
+            <div class="category">
+                <div class="image-background">
+                    <img src="/assets/category-icons/dairy-icon.svg" alt="category-icon" class="category-icon">
+                </div>
+                <div class="category-name">Nabiał</div>
+            </div>
+
+            <div class="category">
+                <div class="image-background">
+                    <img src="/assets/category-icons/candy-icon.svg" alt="category-icon" class="category-icon">
+                </div>
+                <div class="category-name">Słodycze</div>
+            </div>
+        </section>
+    </section>
+    
+   <main class="products">
+    <h2 class="products-title">Proponowane produkty dla ciebie</h2>
+    <section class="products-menu">
+        <button class="scroll-button left-scroll-button">
+            <img src="/assets/arrow-left.svg" alt="Scroll left">
+        </button>
+        
+        <div class="product-cards-container">
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400')"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Chleb Pszenny</h3>
+                    <p class="product-description">Świeży chleb pszenny prosto z piekarni</p>
+                    <div class="product-price">4.99 zł</div>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400')"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Bułki Kajzerki</h3>
+                    <p class="product-description">6 sztuk świeżych kajzerek</p>
+                    <div class="product-price">3.49 zł</div>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400')"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Bagietka Francuska</h3>
+                    <p class="product-description">Długa, chrupiąca bagietka</p>
+                    <div class="product-price">2.99 zł</div>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400')"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Rogal Śniadaniowy</h3>
+                    <p class="product-description">Delikatny rogalik maślany</p>
+                    <div class="product-price">1.99 zł</div>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400')"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Chleb Żytni</h3>
+                    <p class="product-description">Ciemny chleb na zakwasie</p>
+                    <div class="product-price">5.49 zł</div>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400')"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Precle</h3>
+                    <p class="product-description">3 sztuki świeżych precli</p>
+                    <div class="product-price">4.29 zł</div>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400')"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Pączek</h3>
+                    <p class="product-description">Pączek z marmoladą i lukrem</p>
+                    <div class="product-price">2.50 zł</div>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400')"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Ciasto Drożdżowe</h3>
+                    <p class="product-description">Świeże ciasto drożdżowe z kruszonką</p>
+                    <div class="product-price">12.99 zł</div>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400')"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Chleb Razowy</h3>
+                    <p class="product-description">Zdrowy chleb razowy na zakwasie</p>
+                    <div class="product-price">6.49 zł</div>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400')"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Rogaliki</h3>
+                    <p class="product-description">6 sztuk maślanych rogalików</p>
+                    <div class="product-price">8.99 zł</div>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400')"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Chałka</h3>
+                    <p class="product-description">Słodka chałka z makiem</p>
+                    <div class="product-price">7.99 zł</div>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400')"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Pieczywo Tostowe</h3>
+                    <p class="product-description">10 kromek pieczywa tostowego</p>
+                    <div class="product-price">5.49 zł</div>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400')"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Bułki Grahamki</h3>
+                    <p class="product-description">4 sztuki bułek grahamek</p>
+                    <div class="product-price">3.99 zł</div>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
+                </div>
+            </div>
+        </div>
+        
+        <button class="scroll-button right-scroll-button">
+            <img src="/assets/arrow-right.svg" alt="Scroll right">
+        </button>
+    </section>
+</main>
+
+
+<main class="products">
+    <h2 class="products-title">Najpopularniejsze produkty</h2>
+    <section class="products-menu">
+        <button class="scroll-button left-scroll-button" id="left-scroll-button">
+            <img src="/assets/arrow-left.svg" alt="Scroll left">
+        </button>
+        
+        <div class="product-cards-container" id="product-cards-container">
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1518977676601-b53f82aba655?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400')"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Pomidory</h3>
+                    <p class="product-description">Świeże pomidory malinowe</p>
+                    <div class="product-price">8.99 zł/kg</div>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1550258987-190a2d41a8ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400')"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Jabłka</h3>
+                    <p class="product-description">Jabłka szampion 1kg</p>
+                    <div class="product-price">4.49 zł</div>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1550583724-b2692b85b150?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400')"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Mleko</h3>
+                    <p class="product-description">Mleko 3.2% 1L</p>
+                    <div class="product-price">3.99 zł</div>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400')"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Kurczak</h3>
+                    <p class="product-description">Filet z kurczaka 1kg</p>
+                    <div class="product-price">19.99 zł</div>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400')"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Marchewki</h3>
+                    <p class="product-description">Świeże marchewki 1kg</p>
+                    <div class="product-price">3.49 zł</div>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1550258987-190a2d41a8ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400')"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Banany</h3>
+                    <p class="product-description">Banany 1kg</p>
+                    <div class="product-price">6.99 zł</div>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1550583724-b2692b85b150?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400')"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Jajka</h3>
+                    <p class="product-description">Jajka ekologiczne 10szt</p>
+                    <div class="product-price">12.99 zł</div>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400')"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Wołowina</h3>
+                    <p class="product-description">Mięso wołowe 1kg</p>
+                    <div class="product-price">34.99 zł</div>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1518977676601-b53f82aba655?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400')"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Ogórki</h3>
+                    <p class="product-description">Świeże ogórki gruntowe 1kg</p>
+                    <div class="product-price">5.99 zł</div>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1550258987-190a2d41a8ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400')"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Winogrona</h3>
+                    <p class="product-description">Winogrona bezpestkowe 1kg</p>
+                    <div class="product-price">14.99 zł</div>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1550583724-b2692b85b150?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400')"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Ser żółty</h3>
+                    <p class="product-description">Ser gouda 200g</p>
+                    <div class="product-price">7.49 zł</div>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400')"></div>
+                <div class="product-info">
+                    <h3 class="product-name">Schab</h3>
+                    <p class="product-description">Schab wieprzowy 1kg</p>
+                    <div class="product-price">24.99 zł</div>
+                    <button class="add-to-cart">Dodaj do koszyka</button>
+                </div>
+            </div>
+        </div>
+        
+        <button class="scroll-button right-scroll-button" id="right-scroll-button">
+            <img src="/assets/arrow-right.svg" alt="Scroll right">
+        </button>
+    </section>
+</main>
+
+<footer class="app-footer">
+  <div class="footer-main-container">
+
+    <div class="footer-left">
+      <div class="contact-section">
+        <h3>Kontakt & Pomoc</h3>
+        <ul class="contact-info">
+          <li><i class="fas fa-envelope"></i> pomoc@refood.com</li>
+          <li><i class="fas fa-phone"></i> +48 123 456 789</li>
+          <li><i class="fas fa-map-marker-alt"></i> ul. Żywnościowa 123, Warszawa, Polska</li>
+        </ul>
+        <div class="help-buttons">
+          <button class="help-button">Czat na żywo</button>
+          <button class="help-button">Pomoc mailowa</button>
+        </div>
+        
+        <div class="social-section">
+          <h3>Śledź nas</h3>
+          <div class="social-icons">
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Right Side - FAQ -->
+    <div class="footer-right">
+      <div class="faq-section">
+        <h2>Często zadawane pytania</h2>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Jak działa proces odsprzedaży żywności?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Nasza platforma łączy sprzedawców żywności (restauracje, sklepy spożywcze, osoby prywatne) z kupującymi poszukującymi żywności w obniżonych cenach.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Czy żywność jest bezpieczna do spożycia?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Wszystkie produkty muszą spełniać rygorystyczne wytyczne dotyczące bezpieczeństwa.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Jakie metody płatności akceptujecie?
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Akceptujemy wszystkie główne karty kredytowe, PayPal, Apple Pay i Google Pay.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Bottom Section -->
+  <div class="footer-bottom">
+    <div class="newsletter-section">
+      <h3>Newsletter</h3>
+      <p>Zapisz się aby otrzymywać informacje o nowych ofertach</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Twój adres email">
+        <button type="submit">Zapisz się</button>
+      </form>
+    </div>
+    
+    <div class="copyright-section">
+      <p>&copy; 2025 ReFood. Wszelkie prawa zastrzeżone.</p>
+      <div class="legal-links">
+        <a href="#">Polityka prywatności</a>
+        <a href="#">Regulamin</a>
+        <a href="#">Polityka cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
 
     <section class="flexible-search-bar-container">
         <h1>Wpisz adres, aby poznać oferte w okolicy!</h1>
@@ -40,73 +459,35 @@
         </section>
     </section>
 
+    <section class="login-pop-up-container">
+    <div id="loginSection" class="auth-section">
+        <button class="close-login"></button>
+        <h2>Zaloguj się</h2>
+        <form id="loginForm" class="form">
+                <label for="loginUsername">Nazwa użytkownika</label>
+                <input type="text" id="loginUsername" placeholder="Nazwa Użytkownika" required>
+                <label for="loginPassword ">Hasło</label>
+                <input type="password" id="loginPassword" placeholder="Hasło" required>
+                <button type="submit">Login</button>
+            </form>
+            <p>Nie masz konta? <a href="#" class="switch-form" data-show="register">Zarejestrój sie</a></p>
+            <div id="loginMessage" class="message"></div>
+    </div>    
 
-    <section class="search-bar-container">
-        <h1>Poznaj swoje miasto</h1>
-        <section class="search-bar">
-            <div class="adress-img"></div>
-            <input type="text" class="search-input" placeholder="Wpisz Adres" />
-            <button class="search-button">Użyj obecnej lokalizacji</button>
-        </section>
-        <section class="categories-container">
-            
-            <div class="category">
-                <div class="image-background">
-                    <img src="/assets/category-icons/wheat-icon.svg" alt="category-icon" class="category-icon">
-                </div>
-                 <div class="category-name">Pszenne</div>
-            </div>
-
-             <div class="category">
-                <div class="image-background">
-                    <img src="/assets/category-icons/vegetable-icon.svg" alt="category-icon" class="category-icon">
-                </div>
-                <div class="category-name">Warzywa</div>
-            </div>
-
-             <div class="category">
-                <div class="image-background">
-                    <img src="/assets/category-icons/fruit-icon.svg" alt="category-icon" class="category-icon">
-                </div>
-                <div class="category-name">Owoce</div>
-            </div>
-
-             <div class="category">
-                <div class="image-background">
-                    <img src="/assets/category-icons/meat-icon.svg" alt="category-icon" class="category-icon">
-                </div>
-                <div class="category-name">Mięsa</div>
-            </div>
-
-             <div class="category">
-                <div class="image-background">
-                    <img src="/assets/category-icons/dairy-icon.svg" alt="category-icon" class="category-icon">
-                </div>
-                <div class="category-name">Nabiał</div>
-            </div>
-
-             <div class="category">
-                <div class="image-background">
-                    <img src="/assets/category-icons/candy-icon.svg" alt="category-icon" class="category-icon">
-                </div>
-                <div class="category-name">Słodycze</div>
-            </div>
-
-        </section>
-    </section>
-    
-    <main class="products">
-
-    </main>
-
-    <section class="customer-chat">
-
-    </section>
-
-
-    <footer>
-
-    </footer>
-
+    <div id="registerSection" class="auth-section">
+        <button class="close-login"></button>
+        <h2>Załóż konto</h2>
+            <form id="registerForm" class="form">
+                <label for="regUsername">Nazwa użytkownika</label>
+                <input type="text" id="regUsername" placeholder="Nazwa Użytkownika" required>
+                <label for="regPassword">Hasło</label>
+                <input type="password" id="regPassword" placeholder="Hasło" required>
+                <button type="submit">Zarejestrój</button>
+            </form>
+            <p>Masz już konto? <a href="#" class="switch-form" data-show="login">Zaloguj się</a></p>
+            <div id="regMessage" class="message"></div>
+    </div>    
+</section>
+  
 </body>
 </html>

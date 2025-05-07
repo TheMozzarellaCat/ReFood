@@ -12,12 +12,10 @@
     &::before{
         content: ""; 
         position: absolute;
-        bottom: 0; 
+        bottom: -1px; 
         width: 100%;
         height: 10vh;
-        background: url(/assets//wave-haikei.svg) no-repeat;
-        object-fit: contain;
-
+        background: url(/assets/bottom-search-bar-transition.svg);
     }
     h1{
         color: white;
@@ -82,9 +80,9 @@
                 font-weight: 700;
             }
             .image-background{
-                height: 15vh;
+                height: 14vh;
                 width: 100%;
-                background-size: 100% 15vh;
+                background-size: 100% 14vh;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -92,8 +90,8 @@
                 box-sizing: border-box;
                 background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cdefs%3E%3CclipPath id=%22a%22%3E%3Cpath fill=%22currentColor%22 d=%22M821.5 703Q734 906 517 876.5t-326-203q-109-173.5-7-359T507.5 116Q729 103 819 301.5t2.5 401.5Z%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3Cg clip-path=%22url(%23a)%22%3E%3Cpath fill=%22%23fff%22 d=%22M821.5 703Q734 906 517 876.5t-326-203q-109-173.5-7-359T507.5 116Q729 103 819 301.5t2.5 401.5Z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
                .category-icon{
-                    height: 5vh;
-                    width: 5vh;
+                    height: 4vh;
+                    width: 4vh;
                 }
             }
         }
