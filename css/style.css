@@ -73,7 +73,7 @@ header .site-info .site-logo {
   height: 4vh;
   width: 4vh;
   background-repeat: no-repeat;
-  background: url(/assets/site-logo.svg);
+  background: url(../assets/site-logo.svg);
   background-size: 4vh 4vh;
 }
 header .site-info .site-name {
@@ -268,7 +268,7 @@ header .auth-btn p {
   bottom: -1px;
   width: 100%;
   height: 10vh;
-  background: url(/assets/bottom-search-bar-transition.svg);
+  background: url(../assets/bottom-search-bar-transition.svg);
 }
 .search-bar-container h1 {
   color: white;
@@ -289,7 +289,7 @@ header .auth-btn p {
 .search-bar-container .search-bar .adress-img {
   height: 3vh;
   width: 6%;
-  background: url(/assets/location-icon.svg);
+  background: url(../assets/location-icon.svg);
   background-size: 100% 3vh;
 }
 .search-bar-container .search-bar .search-input {
@@ -381,7 +381,7 @@ header .auth-btn p {
 .flexible-search-bar-container .search-bar .adress-img {
   height: 3vh;
   width: 6%;
-  background: url(/assets/location-icon.svg);
+  background: url(../assets/location-icon.svg);
   background-size: 100% 3vh;
 }
 .flexible-search-bar-container .search-bar .search-input {
